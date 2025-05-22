@@ -26,6 +26,7 @@ cd kafka-docker-example
 ### 2. Start Kafka and Zookeeper
 
 ```bash
+cd docker
 docker-compose up -d
 ```
 
