@@ -26,6 +26,7 @@ cd kafka-docker-example
 ### 2. Start Kafka and Zookeeper
 
 ```bash
+mvn clean install
 cd docker
 docker-compose up -d
 ```
@@ -33,22 +34,7 @@ docker-compose up -d
 This will start:
 - **Zookeeper** on port `2181`
 - **Kafka** on port `9092`
-
-### 3. Run the Spring Applications
-
-You can run the producer and consumer applications from your IDE (e.g., IntelliJ) or using the command line:
-
-```bash
-cd spring-kafka-producer
-./mvnw spring-boot:run
-```
-
-In a new terminal:
-
-```bash
-cd spring-kafka-consumer
-./mvnw spring-boot:run
-```
+- **Spring App** on port 8081
 
 ## ✅ What This Project Demonstrates
 
